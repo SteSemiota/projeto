@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+:root {
+    --cor--primaria: #000000;
+    --cor--segundaria: #E3CCAE; 
+    --cor--terciaria: #B8621B;
+    --cor--hover: #262A56;
+
+    
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body { 
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color: var(--cor--segundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabecalho__menu__link {
+
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor--terciaria);
+    text-decoration: none;
+
+
+
+}
+
+main {
+    flex-grow: 1;
+    margin-top: auto; 
+
+
+}
+
+.apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 82px;
+
+
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    height: 168px;
+   
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.75rem;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.18rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.apresentacao__conteudo__texto { 
+    font-size: 1.563rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.Titulodestaque {
+    color: var(--cor--terciaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor--terciaria);
+    width: 50%; 
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    color: var(--cor--segundaria);
+    font-weight: bolder;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 18px 0;
+    text-decoration: none;
+    
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: var(--cor--hover);
+    color: var(--cor--segundaria);
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+
+
+}
+
+
+
+
+
+.img__ {
+    width: 30%;   
+    margin-top: 16px;
+    border-radius: 16px;
+
+
+}
+
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor--hover);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.sera {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Signika Negative', sans-serif;
+    gap: 4px 0px;
+}
+
+.apresentacao__curriculo {
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Signika Negative', sans-serif;
+    
+
+}
+
+.img__curriculo {
+    width: 30%;   
+    margin-top: 16px;
+    border-radius: 16px;
+    display: flex;
+   
+
+}
+
+.apresentacao__curriculo_h2 {  
+    padding-top: 2%;
+    font-size: 190%; 
+    color: var(--cor--segundaria);
+
+}
+
+.apresentacao__curriculo_ph2 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+@media (max-width: 890px) {
+    .cabecalho {
+        padding: 10%;
+
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 8%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+
+    }
+    
+}
